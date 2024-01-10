@@ -1,5 +1,46 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-gonum-v1-gonum (0.14.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * d/control:
+    - Explicitly Build-Depend on golang-go, rather than golang-any, as
+      gccgo-go isn't supported by upstream and causes several test failures
+      (Closes: #1033360)
+    - Update Build-Depends and Depends
+  * d/rules: Add benchautogen to DH_GOLANG_EXCLUDES rather than manually
+    deleting it after the build
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sun, 24 Sep 2023 03:12:16 +0000
+
+golang-gonum-v1-gonum (0.13.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix skipped architectures in d/rules, and add i386 as it is currently
+    timing out autopkgtest when run on ci.d.n
+
+ -- Mathias Gibbens <gibmat@debian.org>  Tue, 11 Jul 2023 23:30:31 +0000
+
+golang-gonum-v1-gonum (0.13.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Mark golang-gonum-v1-gonum-dev as Multi-Arch: foreign
+  * Extend timeout for running tests, and skip tests on ppc64el and s390x
+    architectures
+
+ -- Mathias Gibbens <gibmat@debian.org>  Fri, 07 Jul 2023 21:55:07 +0000
+
+golang-gonum-v1-gonum (0.12.0-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #1010129)
+  * debian/control: bump standard to 4.6.2 (no changes)
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Tue, 07 Feb 2023 19:38:38 +0100
+
+golang-gonum-v1-gonum (0.9.0-1) unstable; urgency=medium
 
   * Initial release
+  * don't use golang-gonum-v1-plot at the moment, there is only an old
+    version in the archive
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Thorsten Alteholz <debian@alteholz.de>  Thu, 15 Jul 2021 20:07:13 +0200
