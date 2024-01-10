@@ -1,22 +1,361 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: gonum
+Upstream-Contact: TODO
+Source: https://github.com/gonum/gonum
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Copyright: 2010, The Go Authors
+           2013, The Gonum Authors
+License: BSD-3-clause
+
+Files: graph/formats/rdf/*
+Copyright: 2010-2014, World Wide Web Consortium, (MIT, ERCIM, Keio, Beihang)
+License: W3CTestSuiteLicense OR W3C-BSD-3-clause
+
+Files: graph/formats/cytoscapejs/testdata/*
+Copyright: 2016-2018, The Cytoscape Consortium
+License: Expat
+
+Files: graph/formats/sigmajs/testdata/*
+Copyright: 2013-2014, Alexis Jacomy, http://sigmajs.org
+License: Expat
+
+Files: graph/formats/dot/*
+Copyright: 2017, The Gonum Authors
+           2017 Robin Eklind
+License: BSD-3-clause and CC0
+
+Files: internal/math32/math_test.go
+Copyright: 2009 The Go Authors
+License: BSD-3-clause
+Comment: 
+ The original C code and the long comment below are
+ from FreeBSD's /usr/src/lib/msun/src/e_sqrt.c and
+ came with this notice.  The go code is a simplified
+ version of the original C.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ ====================================================
+ Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ Developed at SunPro, a Sun Microsystems, Inc. business.
+ Permission to use, copy, modify, and distribute this
+ software is freely granted, provided that this notice
+ is preserved.
+
+Files: num/dual/dual_fike.go
+	num/hyperdual/hyperdual_fike.go
+	num/dualquat/dual_fike.go
+Copyright: 2018 The Gonum Authors
+License: BSD-3-clause
+Comment:
+ Derived from code by Jeffrey A. Fike at http://adl.stanford.edu/hyperdual/
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ The MIT License (MIT)
+ .
+ Copyright (c) 2006 Jeffrey A. Fike
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+
+Files: integrate/quad/hermite.go
+Copyright: 2016 The Gonum Authors
+License: BSD-3-clause
+Comment:
+ Algorithm adapted from Chebfun http://www.chebfun.org/. Specific code
+ https://github.com/chebfun/chebfun/blob/development/hermpts.m.
+ .
+ Original Copyright Notice:
+ .
+ Copyright (c) 2015, The Chancellor, Masters and Scholars of the University
+ of Oxford, and the Chebfun Developers. All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+     * Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+     * Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+     * Neither the name of the University of Oxford nor the names of its
+       contributors may be used to endorse or promote products derived from
+       this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: integrate/quad/internal/hermpts.m
+Copyright: 2015, The Chancellor, Masters and Scholars of the University of Oxford, and the Chebfun Developers.
+           2016 The Gonum Authors
+License: BSD3-uoo
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+     * Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+     * Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+     * Neither the name of the University of Oxford nor the names of its 
+       contributors may be used to endorse or promote products derived from 
+       this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR 
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: integrate/quad/legendre.go
+Copyright: 2016 The Gonum Authors
+License: BSD-3-clause
+Comment:
+ Algorithm adapted from http://sourceforge.net/projects/fastgausslegendrequadrature.
+ .
+ Original Copyright Notice together with BSD License:
+ *******************************************
+ *  Copyright (C) 2014 by Ignace Bogaert   *
+ *******************************************
+ .
+ This software package is based on the paper
+    I. Bogaert, "Iteration-Free Computation of Gauss-Legendre Quadrature Nodes and Weights",
+    to be published in the SIAM Journal of Scientific Computing.
+ .
+ The main features of this software are:
+ - Speed: due to the simple formulas and the O(1) complexity computation of individual Gauss-Legendre
+   quadrature nodes and weights. This makes it compatible with parallel computing paradigms.
+ - Accuracy: the error on the nodes and weights is within a few ulps (see the paper for details).
+ .
+ Disclaimer:
+ THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: mathext/internal/cephes/*
+Copyright: ©1984, ©1987, ©1988 by Stephen L. Moshier
+           Portions Copyright ©2016 The Gonum Authors
+License: BSD-3-clause
+Comment: 
+ Derived from SciPy's special/cephes/polevl.h
+ https://github.com/scipy/scipy/blob/master/scipy/special/cephes/polevl.h
+ Made freely available by Stephen L. Moshier without support or guarantee.
+ .
+ Use of this source code is governed by a BSD-style
+ license that can be found in the LICENSE file.
+ Copyright ©1984, ©1987, ©1988 by Stephen L. Moshier
+ Portions Copyright ©2016 The Gonum Authors. All rights reserved.
+
+Files: mathext/internal/cephes/lanczos.go
+License: BSD-3-clause
+Copyright: ©2006 John Maddock
+           Portions ©2003 Boost
+           Portions ©2016 The Gonum Authors
+Comment:
+ Derived from SciPy's special/cephes/lanczos.c
+ https://github.com/scipy/scipy/blob/master/scipy/special/cephes/lanczos.c
+ .
+ Use of this source code is governed by a BSD-style
+ license that can be found in the LICENSE file.
+ Copyright ©2006 John Maddock
+ Portions Copyright ©2003 Boost
+ Portions Copyright ©2016 The Gonum Authors. All rights reserved.
+
+Files: mathext/erf.go
+License: BSD-3-clause
+Copyright: 2017 The Gonum Authors
+Comment:
+ Copyright (c) 2012 The Probab Authors. All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ * Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above
+ copyright notice, this list of conditions and the following disclaimer
+ in the documentation and/or other materials provided with the
+ distribution.
+ * Neither the name of Google Inc. nor the names of its
+ contributors may be used to endorse or promote products derived from
+ this software without specific prior written permission.
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: mathext/prng/mt19937*
+Copyright: 2019 The Gonum Authors
+License: BSD-3-clause
+Comment:
+ Original C program copyright Takuji Nishimura and Makoto Matsumoto 2004.
+ http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/VERSIONS/C-LANG/mt19937-64.c
+ (BSD-3 license)
+
+Files: debian/*
+Copyright: 2021 Thorsten Alteholz <debian@alteholz.de>
+License: BSD-3-clause
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: CC0
+ On Debian systems, the complete text of the CC0 license can be found
+ in "/usr/share/common-licenses/CC0-1.0".
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+     * Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+     * Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+     * Neither the name of the Gonum project nor the names of its authors and
+       contributors may be used to endorse or promote products derived from this
+       software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the “Software”), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: W3C-BSD-3-clause
+ Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+ .
+  -  Redistributions of works must retain the original copyright notice,
+     this list of conditions and the following disclaimer.
+  -  Redistributions in binary form must reproduce the original copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+  -  Neither the name of the W3C nor the names of its contributors may be
+     used to endorse or promote products derived from this work without
+     specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+ THE POSSIBILITY OF SUCH DAMAGE.
+ 
+License: W3CTestSuiteLicense
+ By using and/or copying this document, or the W3C document from which this
+ statement is linked, you (the licensee) agree that you have read, understood,
+ and will comply with the following terms and conditions:
+ .
+ Permission to copy, and distribute the contents of this document, or the W3C
+ document from which this statement is linked, in any medium for any purpose
+ and without fee or royalty is hereby granted, provided that you include the
+ following on ALL copies of the document, or portions thereof, that you use:
+ .
+  -  A link or URL to the original W3C document.
+  -  The pre-existing copyright notice of the original author, or if it doesn't
+     exist, a notice (hypertext is preferred, but a textual representation is
+     permitted) of the form: "Copyright © [$date-of-document] World Wide Web
+     Consortium, (MIT, ERCIM, Keio, Beihang) and others. All Rights Reserved.
+     http://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html"
+  -  If it exists, the STATUS of the W3C document.
+ .
+ When space permits, inclusion of the full text of this NOTICE should be provided.
+ We request that authorship attribution be provided in any software, documents,
+ or other items or products that you create pursuant to the implementation of the
+ contents of this document, or any portion thereof.
+ .
+ No right to create modifications or derivatives of W3C documents is granted
+ pursuant to this license. However, if additional requirements (documented in
+ the Copyright FAQ) are satisfied, the right to create modifications or
+ derivatives is sometimes granted by the W3C to individuals complying with
+ those requirements.
+ .
+ If a Test Suite distinguishes the test harness (or, framework for navigation)
+ and the actual tests, permission is given to remove or alter the harness or
+ navigation if the Test Suite in question allows to do so.
+ The tests themselves shall NOT be changed in any way.
+ .
+ The name and trademarks of W3C and other copyright holders may NOT be used in
+ advertising or publicity pertaining to this document or other documents that
+ link to this statement without specific, written prior permission. Title to
+ copyright in this document will at all times remain with copyright holders.
+ Permission is given to use the trademarked string "W3C" within claims of
+ performance concerning W3C Specifications or features described therein,
+ and there only, if the test suite so authorizes.
+ .
+ THIS WORK IS PROVIDED BY W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT HOLDERS
+ AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+ NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL W3C, MIT, ERCIM, KEIO,
+ BEIHANG, THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+ OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ https://www.w3.org/Consortium/Legal/2008/04-testsuite-license
+ https://w3c.github.io/rdf-tests/nquads/TESTS.tar.gz
+ https://w3c.github.io/rdf-tests/ntriples/TESTS.tar.gz
